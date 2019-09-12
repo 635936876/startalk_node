@@ -2,14 +2,15 @@ var nodeConfig = require('../node_config.js');
 
 exports.renderSubmenu = function(req, res, next) {
     var args = {
-        pageTitle: nodeConfig.web.title || '在线客服',
+        pageTitle: nodeConfig.submenu.title || '二级菜单',
         jquery: nodeConfig.jquery,
-        webcss: nodeConfig.web.webcss,
-        webjs: nodeConfig.web.webjs,
+        submenucss: nodeConfig.submenu.submenucss,
+        submenujs: nodeConfig.submenu.submenujs,
         nav: nodeConfig.navigation
     }
 
-    res.render('navigation', args);  
+    //res.render('submenu', args); 
+    res.render('testSubmenu', args); 
 };
 
 exports.renderWeb = function(req, res, next) {
@@ -23,8 +24,8 @@ exports.renderWeb = function(req, res, next) {
         nav: nodeConfig.navigation
     }
 
-    res.render('web', args);
-    //res.render('testWeb', args);   
+    //res.render('web', args);
+    res.render('testWeb', args);   
 };
 
 exports.renderTouch = function(req, res, next) {
@@ -38,8 +39,8 @@ exports.renderTouch = function(req, res, next) {
         nav: nodeConfig.navigation
     }
 
-    res.render('touch', args);
-    //res.render('testTouch', args);
+    //res.render('touch', args);
+    res.render('testTouch', args);
 };
 
 function getClientIp(req) {
