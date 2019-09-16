@@ -9,8 +9,8 @@ exports.renderSubmenu = function(req, res, next) {
         nav: nodeConfig.navigation
     }
 
-    //res.render('submenu', args); 
-    res.render('testSubmenu', args); 
+    res.render('submenu', args); 
+    //res.render('testSubmenu', args); 
 };
 
 exports.renderWeb = function(req, res, next) {
@@ -24,8 +24,8 @@ exports.renderWeb = function(req, res, next) {
         nav: nodeConfig.navigation
     }
 
-    //res.render('web', args);
-    res.render('testWeb', args);   
+    res.render('web', args);
+    //res.render('testWeb', args);   
 };
 
 exports.renderTouch = function(req, res, next) {
@@ -39,8 +39,8 @@ exports.renderTouch = function(req, res, next) {
         nav: nodeConfig.navigation
     }
 
-    //res.render('touch', args);
-    res.render('testTouch', args);
+    res.render('touch', args);
+    //res.render('testTouch', args);
 };
 
 function getClientIp(req) {
