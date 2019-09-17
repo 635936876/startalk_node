@@ -7,12 +7,12 @@ module.exports = {
     "web":{
         "title":'Qchat Web',
         "webcss": '/styles/web/page/' + 'qchat@d80c43acf9053f2dad2e72268fddc86f.css',
-        "webjs": '/scripts/page/web/' + 'qchat@ad801d4e95154a112096c4118661eaaf.js'
+        "webjs": '/scripts/page/web/' + 'qchat@7d4dec279c2f8a02d22b327ac8827cb3.js'
     },
     "touch":{
         "title":'Qchat Touch',
         "touchcss": '/styles/touch/page/' + 'qchat@268bda38e7c91e086867bf7f0da484fd.css',
-        "touchjs": '/scripts/page/touch/' + 'qchat@b367545e38e4de95707d3bce8064ff4f.js'
+        "touchjs": '/scripts/page/touch/' + 'qchat@2666ab27ef54c3db4f10482cea3aee44.js'
     },
     "touchSubmenu":{
         "title":'Callcenter咨询保修系统服务目录',
@@ -21,7 +21,7 @@ module.exports = {
     },
     "webSubmenu":{
         "title":'Callcenter咨询保修系统服务目录',
-        "websubmenucss": '/styles/submenu/' + 'webSubmenu@bc8352a9a9b4a2d5007dc37a3d98ace6.css',
+        "websubmenucss": '/styles/submenu/' + 'webSubmenu@c81ba9775b4ebd87325de5ed6e58dd10.css',
         "websubmenujs": '/scripts/page/submenu/' + 'webSubmenu@22fd8c281d4bde0dc85e6b17716a5961.js'
     },
     "jquery": '/scripts/lib/jquery/'+ 'jquery_1.7@88c8777bbcb1fb174b5edf2c1dd03278.js',
