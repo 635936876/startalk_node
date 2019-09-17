@@ -29,6 +29,7 @@ app.set('view engine', 'handlebars');
 
 app.use('/api/seat', proxy({target: 'http://100.80.129.108:9090/', changeOrigin: true}));
 app.use('/api/supplier', proxy({target: 'http://100.80.129.108:9090/', changeOrigin: true}));
+app.use('/i', proxy({target: 'http://100.80.129.108:9090/', changeOrigin: true}));
 app.use('/http-bind', proxy({target: 'http://' + nodeConfig.xmpp, changeOrigin: true}));
 app.use('/file', proxy({target: nodeConfig.fileurl, changeOrigin: true}));
 app.use('/qcadmin/api', proxy({ 

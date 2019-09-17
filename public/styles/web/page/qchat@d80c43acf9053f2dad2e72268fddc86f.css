@@ -17,17 +17,17 @@ textarea{resize:none}
 body{background:#d4d4d4;font-family:"Microsoft Yahei"}
 .faq-title-ico{font-family:chat_web!important;font-style:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;vertical-align:middle}
 .main{width:100%;height:100%;background:#d4d4d4;position:relative;overflow:hidden}
-.chat_window{position:absolute;top:64px;bottom:10px;right:216px;background:#f6f8f9;border:1px solid #b4b4b4}
+.chat_window{position:absolute;top:64px;bottom:10px;right:10px;background:#f6f8f9;border:1px solid #b4b4b4}
 .left_sidebar,.right_sidebar{position:absolute;top:64px;bottom:10px;background:#f6f8f9;display:inline}
-.right_sidebar{right:10px;width:200px;overflow:hidden}
-.left_sidebar{width:286px;left:10px;background-color:#f6f8f9}
+.right_sidebar{right:10px;width:200px;overflow:hidden;display:none}
+.left_sidebar{width:286px;left:10px;background-color:#f6f8f9;display:none}
 .lb_close .qchat-list{display:none}
 .lb_close .switcher{left:0}
 .lb_close .chat_window{left:42px}
 .lb_close .unread_num{display:inline-block}
 .lb_open .qchat-list{display:block}
 .lb_open .switcher{right:0}
-.lb_open .chat_window{left:296px}
+.lb_open .chat_window{left:10px}
 .lb_open .unread_num{display:none}
 .chat_window .dialog{position:absolute;left:0;top:0;right:0;bottom:155px;z-index:1;overflow-y:auto}
 .chat_window .entry{position:absolute;z-index:2;left:0;right:0;bottom:0;height:155px;background:#f0f0f0}

@@ -1,16 +1,29 @@
 var nodeConfig = require('../node_config.js');
 
-exports.renderSubmenu = function(req, res, next) {
+exports.renderTouchSubmenu = function(req, res, next) {
     var args = {
-        pageTitle: nodeConfig.submenu.title || '二级菜单',
+        pageTitle: nodeConfig.touchSubmenu.title || '二级菜单',
         jquery: nodeConfig.jquery,
-        submenucss: nodeConfig.submenu.submenucss,
-        submenujs: nodeConfig.submenu.submenujs,
+        touchsubmenucss: nodeConfig.touchSubmenu.touchsubmenucss,
+        touchsubmenujs: nodeConfig.touchSubmenu.touchsubmenujs,
         nav: nodeConfig.navigation
     }
 
-    res.render('submenu', args); 
-    //res.render('testSubmenu', args); 
+    res.render('touchSubmenu', args); 
+    //res.render('testTouchSubmenu', args); 
+};
+
+exports.renderWebSubmenu = function(req, res, next) {
+    var args = {
+        pageTitle: nodeConfig.webSubmenu.title || '二级菜单',
+        jquery: nodeConfig.jquery,
+        websubmenucss: nodeConfig.webSubmenu.websubmenucss,
+        websubmenujs: nodeConfig.webSubmenu.websubmenujs,
+        nav: nodeConfig.navigation
+    }
+
+    res.render('webSubmenu', args); 
+    //res.render('testWebSubmenu', args); 
 };
 
 exports.renderWeb = function(req, res, next) {

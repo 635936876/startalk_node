@@ -9,12 +9,20 @@ router.get('/', function(req, res, next) {
     });
 });
 
-router.get(/\/submenu/, function(req, res, next) {
-    main.renderSubmenu(req, res, next);
+router.get(/\/touchSubmenu/, function(req, res, next) {
+    main.renderTouchSubmenu(req, res, next);
 });
 
-router.post(/\/submenu/, function(req, res, next) {
-    main.renderSubmenu(req, res, next);
+router.post(/\/touchSubmenu/, function(req, res, next) {
+    main.renderTouchSubmenu(req, res, next);
+});
+
+router.get(/\/webSubmenu/, function(req, res, next) {
+    main.renderWebSubmenu(req, res, next);
+});
+
+router.post(/\/webSubmenu/, function(req, res, next) {
+    main.renderWebSubmenu(req, res, next);
 });
 
 router.get(/\/webchat\/web/, function(req, res, next) {
