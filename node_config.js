@@ -7,12 +7,12 @@ module.exports = {
     "web":{
         "title":'Qchat Web',
         "webcss": '/styles/web/page/' + 'qchat@d80c43acf9053f2dad2e72268fddc86f.css',
-        "webjs": '/scripts/page/web/' + 'qchat@023935a0314032f0e1afdbc11b29247d.js'
+        "webjs": '/scripts/page/web/' + 'qchat@6be5ffdaa0167d216a7bcffa4df033b2.js'
     },
     "touch":{
         "title":'Qchat Touch',
         "touchcss": '/styles/touch/page/' + 'qchat@268bda38e7c91e086867bf7f0da484fd.css',
-        "touchjs": '/scripts/page/touch/' + 'qchat@c6eb45accbc465e165cc79aa62090305.js'
+        "touchjs": '/scripts/page/touch/' + 'qchat@7f1e709b0f82bc095e60c28fc41350a9.js'
     },
     "touchSubmenu":{
         "title":'Callcenter咨询保修系统服务目录',
