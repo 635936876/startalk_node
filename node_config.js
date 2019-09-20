@@ -1,6 +1,6 @@
 module.exports = {
     "javaurl": "",
-    "fileurl": "",
+    "fileurl": "",  
     "httpurl": "",
     "apiurl": "",
     "xmpp": "",
