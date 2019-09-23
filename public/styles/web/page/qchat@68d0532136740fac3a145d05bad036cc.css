@@ -46,7 +46,7 @@ body{background:#d4d4d4;font-family:"Microsoft Yahei"}
 .dialog .talk_me .me_time{font-weight:bold;white-space:nowrap;width:100%;text-overflow:ellipsis;overflow:hidden;display:inline-block;float:right;padding-right:3px;text-align:right;color:#868484;position:absolute;right:40px}
 .dialog .talk_ddr{position:relative;margin:10px 0;*zoom:1}
 .dialog .talk_ddr .ddr_time{font-weight:bold;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;display:inline-block;float:left;padding-right:3px;color:#868484;position:absolute;left:40px}
-.dialog .talk_ddr .answer-sub{width:30px;height:30px;position:absolute;left:0;top:0;zoom:1}
+.dialog .talk_ddr .answer-sub{width:30px;height:30px;position:absolute;left:0;top:0;zoom:1;border-radius:1000px}
 .dialog .talk_ddr .answer_talk{color:#383a3a;margin:20px 0 0 43px;display:inline;background:#daf0ff;border:1px solid #cddfef;padding:7px;float:left;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;font-size:14px;max-width:90%}
 .dialog .talk_ddr .answer_talk i{background:url() no-repeat -108px 0;width:7px;height:8px;position:absolute;left:37px;overflow:hidden}
 .dialog .talk_ddr .answer_talk p{color:#555;word-wrap:break-word;word-break:break-all}
