@@ -17,12 +17,12 @@ module.exports = {
     "touchSubmenu":{
         "title":'Callcenter咨询保修系统服务目录',
         "touchsubmenucss": '/styles/submenu/' + 'touchSubmenu@2e24653dd36db9f99df632a0626a8ef9.css',
-        "touchsubmenujs": '/scripts/page/submenu/' + 'touchSubmenu@8650231bce15ef43295a29444417a233.js'
+        "touchsubmenujs": '/scripts/page/submenu/' + 'touchSubmenu@2c081a42ef7f23b7b41c66942ef99519.js'
     },
     "webSubmenu":{
         "title":'Callcenter咨询保修系统服务目录',
         "websubmenucss": '/styles/submenu/' + 'webSubmenu@345cc633de1ea544e631d3c94c7736bb.css',
-        "websubmenujs": '/scripts/page/submenu/' + 'webSubmenu@c7e96fd112b539d760426af778c37e2a.js'
+        "websubmenujs": '/scripts/page/submenu/' + 'webSubmenu@3208c7a1f6c82895566cec5a02de20d8.js'
     },
     "jquery": '/scripts/lib/jquery/'+ 'jquery_1.7@88c8777bbcb1fb174b5edf2c1dd03278.js',
     "navigation": '/' + "navigation@d17692dc7e050e06bb5332bf057f4a99.js"
