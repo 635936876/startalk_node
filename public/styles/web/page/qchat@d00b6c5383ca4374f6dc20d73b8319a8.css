@@ -52,7 +52,7 @@ body{background:#d4d4d4;font-family:"Microsoft Yahei"}
 .dialog .talk_ddr .answer_talk p{color:#555;word-wrap:break-word;word-break:break-all}
 .dialog .talk_ddr .answer_talk .robot-list-w{padding-top:5px}
 .dialog .talk_ddr .answer_talk .robot-list-w li a{color:#3b8bea}
-.dialog .talk_me .ask_sub{zoom:1;width:30px;height:30px;position:absolute;right:0;top:0}
+.dialog .talk_me .ask_sub{zoom:1;width:30px;height:30px;position:absolute;right:0;top:0;border-radius:1000px}
 .dialog .talk_me .ask_talk{float:right;display:inline;position:relative;margin:20px 43px 20px 0;background:#fff;border:1px solid #cbcbcb;padding:7px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;max-width:90%}
 .dialog .talk_me .ask_talk i{background:url() no-repeat -117px 0;width:7px;height:8px;position:absolute;right:-7px}
 .dialog .talk_me .ask_talk p{color:#555;word-wrap:break-word;word-break:break-all}
