@@ -9,6 +9,22 @@ router.get('/', function(req, res, next) {
     });
 });
 
+router.get(/\/login\/web/, function(req, res, next) {
+    main.renderWebLogin(req, res, next);
+});
+
+router.post(/\/login\/web/, function(req, res, next) {
+    main.renderWebLogin(req, res, next);
+});
+
+router.get(/\/login\/touch/, function(req, res, next) {
+    main.renderTouchLogin(req, res, next);
+});
+
+router.post(/\/login\/touch/, function(req, res, next) {
+    main.renderTouchLogin(req, res, next);
+});
+
 router.get(/\/webchat\/web/, function(req, res, next) {
     main.renderWeb(req, res, next);
 });

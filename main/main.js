@@ -1,5 +1,11 @@
 var nodeConfig = require('../node_config.js');
 
+exports.renderWebLogin = function(req, res, next) {
+
+    //res.render('web', args);
+    res.render('testWebLogin');   
+};
+
 exports.renderWeb = function(req, res, next) {
     var ipAddress = getClientIp(req) || '';
     var args = {
@@ -11,8 +17,8 @@ exports.renderWeb = function(req, res, next) {
         nav: nodeConfig.navigation
     }
 
-    res.render('web', args);
-    //res.render('testWeb', args);   
+    //res.render('web', args);
+    res.render('testWeb', args);   
 };
 
 exports.renderTouch = function(req, res, next) {
@@ -26,8 +32,8 @@ exports.renderTouch = function(req, res, next) {
         nav: nodeConfig.navigation
     }
 
-    res.render('touch', args);
-    //res.render('testTouch', args);
+    //res.render('touch', args);
+    res.render('testTouch', args);
 };
 
 function getClientIp(req) {
