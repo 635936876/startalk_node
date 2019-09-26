@@ -131,5 +131,29 @@
 - 项目预览：
     - 项目启动成功后，在电脑浏览器中输入 [本机IP:8997/webchat/web/?strid=admin&shopId=shop_1],回车键访问web页面
     - 项目启动成功后，在电脑浏览器中输入 [本机IP:8997/webchat/touch/?strid=admin&shopId=shop_1],回车键访问touch页面
-
-
+- 修改一级菜单(以增加一级菜单为例)
+    - touch页面:
+        - 需修改touchSubmenu.handlebars文件
+        - 在35行新增(中间写一级菜单名)
+            ```
+                <li></li>
+            ```
+        - 在81行新增(id写一级菜单名)
+            ```
+                <div
+                    class="sub-item"
+                    style="display:none;"
+                    id=""
+                ></div>
+            ```
+    - web页面:
+        - 需修改webSubmenu.handlebars文件
+        - 在82行新增(div中间和id写一级菜单名)
+            ```
+                <div class="ten">
+                    <div class="everyTitle">
+                        
+                    </div>
+                    <ul id=""></ul>
+                </div>
+            ```
