@@ -1,16 +1,15 @@
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>testWeb</title>
     <link type="text/css" rel="stylesheet" media="screen"
         href="http://127.0.0.1/fe_qunarchat_web/prd/styles/web/page/login/login@version.css" />
-        
 </head>
 
 <body>
      <div class="large-header">
-        <div class="logo_box">
+        <div id="qa">
             <h2>Qchat客服聊天系统</h2>
             <form action="#" name="f" method="post">
                 <div class="input_outer">
@@ -18,7 +17,7 @@
                     <input
                         name="logname"
                         class="text"
-                        style="color: #FFFFFF !important"
+                        style="position:absolute; z-index:100;"
                         type="text"
                         placeholder="请输入账户"
                         id="logname"
@@ -29,7 +28,7 @@
                     <input
                         name="logpass"
                         class="text"
-                        style="color: #FFFFFF !important; position:absolute; z-index:100;"
+                        style="position:absolute; z-index:100;"
                         value=""
                         type="password"
                         placeholder="请输入密码"
@@ -44,11 +43,21 @@
             </form>
         </div>
     </div>
-
-    <script type="text/javascript" src="http://127.0.0.1/fe_qunarchat_web/prd/navigation@dev.js"></script>
     <script type="text/javascript" src="http://127.0.0.1/jquery/prd/jquery-1.11.1.js"></script>
-    <script type="text/javascript"
-        src="http://127.0.0.1/fe_qunarchat_web/prd/scripts/page/web/login/bundle@version.js"></script>
+    <script src="http://passport.cnblogs.com/scripts/jsencrypt.min.js"></script>
+    <script>
+        const phone = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent);
+        if (!phone) {
+            $('#qa').addClass("logo_box");
+            $('#qa').removeClass("phone_logo_box");
+        } else {
+            $('#qa').addClass("phone_logo_box");
+            $('#qa').removeClass("logo_box");
+        }
+
+    </script>
+    <script type="text/javascript" src="http://127.0.0.1/fe_qunarchat_web/prd/navigation@dev.js"></script>
+    <script type="text/javascript" src="http://127.0.0.1/fe_qunarchat_web/prd/scripts/page/web/login/login@version.js"></script>
         
   
 </body>
